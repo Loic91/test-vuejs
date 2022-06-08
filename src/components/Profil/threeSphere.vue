@@ -10,7 +10,8 @@
         <Camera :position="{ z: 10 }" />
         <Scene>
             <PointLight :position="{ y: 150, z: 150 }" />
-            <Box ref="box" v-on:pointerOver="boxOver" v-on:click="boxClick" v-bind:rotation="{ y: Math.PI / 4, z: Math.PI / 4 }">
+            <!-- <Box ref="box" v-on:pointerOver="boxOver" v-on:click="boxClick" v-bind:rotation="{ y: Math.PI / 4, z: Math.PI / 4 }"> -->
+            <Box ref="box" v-on:pointerOver="boxOver" v-on:click="boxClick" v-bind:rotation="{ y: Math.PI / 4, z: Math.PI / 4 }" v-bind:width="2" v-bind:height="2" v-bind:depth="10">
                 <LambertMaterial :color="boxColor" />
             </Box>
         </Scene>
