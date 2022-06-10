@@ -43,17 +43,20 @@
     </div>
 
     <threeSphere />
+    <smooth />
 
 </template>
 
 <script>
 import threeSphere from '@/components/Profil/threeSphere.vue'
+import Smooth from '@/components/Utils/Smooth.vue'
 import gsap from 'gsap';
 
 export default {
     name: 'ProfilView',
     components: {
         threeSphere,
+        Smooth,
     },
 
     setup() {
@@ -113,7 +116,7 @@ export default {
 
     .div2 { 
         grid-area: 1 / 2 / 2 / 6; 
-        background-color: rgb(141, 136, 136);
+        /* background-color: rgb(141, 136, 136); */
         display: flex;
         justify-content: space-around;
          z-index: 2;

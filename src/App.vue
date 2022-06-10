@@ -3,12 +3,21 @@
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link> |
     <router-link to="/profil">Profil</router-link> |
-    <router-link to="/profil2">Profil Two</router-link>
+    <router-link to="/profil2">Profil-Two</router-link> |
+    <router-link to="/profil3">Profil-Three</router-link> |
+    <router-link to="/profil4">Profil-Four</router-link>
   </nav>
-  <router-view/>
+  <router-view />
 </template>
 
 <style lang="scss">
+body {
+  background-color: lightblue;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

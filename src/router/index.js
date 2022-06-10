@@ -23,6 +23,16 @@ const routes = [
     name: 'profil2',
     component: () => import(/* webpackChunkName: "about" */ '../views/ProfilView2.vue')
   },
+  {
+    path: '/profil3',
+    name: 'profil3',
+    component: () => import(/* webpackChunkName: "about" */ '../views/ProfilView3.vue')
+  },
+  {
+    path: '/profil4',
+    name: 'profil4',
+    component: () => import(/* webpackChunkName: "about" */ '../views/ProfilView4.vue')
+  },
 ]
 
 const router = createRouter({

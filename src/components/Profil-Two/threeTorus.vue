@@ -1,7 +1,7 @@
 <template>
   <Renderer ref="renderer" resize orbit-ctrl pointer>
     <Camera v-bind:position="{ z: 200 }" />
-    <Scene>
+    <Scene background="red">
         <AmbientLight color="#808080" />
         <PointLight color="#ff6000" />
         <PointLight ref="light" color="#0060ff" v-bind:intensity="0.5" />
@@ -13,9 +13,9 @@
             <StandardMaterial v-bind:props="{ transparent: true, opacity: 0.9, metalness: 0.8, roughness: 0.5 }"  />
         </InstancedMesh>
 
-        <Text
+        <!-- <Text
             text="TroisJS"
-            font-src="/assets/helvetiker_regular.typeface.json"
+            font-src="sans-serif"
             align="center"
             v-bind:size="30"
             v-bind:height="5"
@@ -23,7 +23,7 @@
             v-bind:cast-shadow="true"
         >
             <PhongMaterial />
-        </Text>
+        </Text> -->
     </Scene>
     <EffectComposer>
         <RenderPass />

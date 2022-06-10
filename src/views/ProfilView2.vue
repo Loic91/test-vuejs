@@ -43,17 +43,20 @@
     </div>
 
     <threeSphere />
+    <Smooth />
 
 </template>
 
 <script>
 import threeSphere from '@/components/Profil-Two/threeTorus.vue'
+import Smooth from '@/components/Utils/Smooth.vue'
 import gsap from 'gsap';
 
 export default {
     name: 'ProfilView2',
     components: {
         threeSphere,
+        Smooth,
     },
 
     setup() {
@@ -96,11 +99,7 @@ export default {
 
 <style>
 
-    body {
-        margin: 0;
-        padding: 0;
-        background-color: lightblue;
-    }
+    
     .parent {
         display: grid;
         grid-template-columns: repeat(5, 1fr);

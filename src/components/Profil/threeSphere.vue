@@ -10,10 +10,12 @@
         <Camera :position="{ z: 10 }" />
         <Scene>
             <PointLight :position="{ y: 150, z: 150 }" />
-            <!-- <Box ref="box" v-on:pointerOver="boxOver" v-on:click="boxClick" v-bind:rotation="{ y: Math.PI / 4, z: Math.PI / 4 }"> -->
-            <Box ref="box" v-on:pointerOver="boxOver" v-on:click="boxClick" v-bind:rotation="{ y: Math.PI / 4, z: Math.PI / 4 }" v-bind:width="2" v-bind:height="2" v-bind:depth="10">
+            <!-- <Box ref="box" v-on:pointerOver="boxOver" v-on:click="boxClick" v-bind:rotation="{ y: Math.PI / 4, z: Math.PI / 4 }" v-bind:width="2" v-bind:height="2" v-bind:depth="10">
                 <LambertMaterial :color="boxColor" />
-            </Box>
+            </Box> -->
+            <Sphere ref="sphere" v-on:pointerOver="boxOver" v-on:click="boxClick" v-bind:rotation="{ y: Math.PI / 14, z: Math.PI / 14 }" v-bind:radius="3" v-bind:widthSegments="64" v-bind:heightSegments="32">
+                <PhongMaterial :color="boxColorSphere" />
+            </Sphere>
         </Scene>
     </Renderer>
     
@@ -21,7 +23,7 @@
 
 <script>
 // import { Color, InstancedBufferAttribute , MathUtils, Object3D, Vector3 } from 'three';
-import { Box, Camera, LambertMaterial, PointLight, Renderer, Scene } from 'troisjs';
+import { Box, Sphere, Camera, PhongMaterial, ToonMaterial, LambertMaterial, PointLight, Renderer, Scene } from 'troisjs';
 // "chroma-js" est une petite bibliothèque JavaScript sans dépendance ( 13,5 Ko ) pour toutes sortes de conversions de couleurs et d'échelles de couleurs
 // import chroma from 'chroma-js';
 
@@ -29,11 +31,12 @@ import { Box, Camera, LambertMaterial, PointLight, Renderer, Scene } from 'trois
 export default {
     name: 'threeSphere',
 
-    components: { Box, Camera, LambertMaterial, PointLight, Renderer, Scene },
+    components: { Box, Sphere, Camera,PhongMaterial, ToonMaterial, LambertMaterial, PointLight, Renderer, Scene },
 
     data() {
         return {
             boxColor: '#ffffff',
+            boxColorSphere: 'red',
         };
     },
     methods: {
