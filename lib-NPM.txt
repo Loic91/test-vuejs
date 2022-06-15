@@ -1,0 +1,62 @@
+*** Vue.js - RESPONSIVE
+https://stackoverflow.com/questions/48515023/display-different-vuejs-components-for-mobile-browsers
+
+=>     	<template>  
+            	<div v-if="!isMobile()">
+                  		<desktop>
+                   		...
+                 		</desktop>
+            	</div>
+
+            	<div v-else>
+                  		<mobile>
+                  		 ...
+                  		</mobile>
+             	</div>
+        	</template>
+
+
+=> 	methods: {
+        		isMobile() {
+            		if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                			return true
+            		} else {
+                			return false
+            		}
+        		}
+    	},
+
+
+
+
+
+*** SimplexNoise
+
+simplex-noise.js est une implémentation de bruit en Javascript. Il est autonome (sans dépendance), relativement petit et assez rapide.
+=> npm i simplex-noise
+
+
+
+
+*** v-tweakpane
+
+Bibliothèque de volets compacte pour affiner les paramètres et surveiller les changements de valeur.
+=> npm i v-tweakpane
+
+
+
+
+*** chroma-js
+
+Chroma.js est une petite bibliothèque JavaScript sans dépendance ( 13,5 Ko ) pour toutes sortes de conversions de couleurs et d'échelles de couleurs.
+=> npm i chroma-js
+
+
+
+
+*** @studio-freight/lenis
+
+Smooth-scroll
+=> npm i @studio-freight/lenis
+
+

@@ -5,7 +5,13 @@
     <router-link to="/profil">Profil</router-link> |
     <router-link to="/profil2">Profil-Two</router-link> |
     <router-link to="/profil3">Profil-Three</router-link> |
-    <router-link to="/profil4">Profil-Four</router-link>
+    <router-link to="/profil4">Profil-Four</router-link> |
+    <router-link to="/profil5">Profil-Five</router-link> |
+    <router-link to="/profil6">Profil-Six</router-link> |
+    <router-link to="/profil7">Profil-Seven</router-link> |
+    <router-link to="/profil8">Profil-Eight</router-link> |
+    <router-link to="/profil9">Profil-Nine</router-link> |
+    <router-link to="/profil10">Profil-Ten</router-link>
   </nav>
   <router-view />
 </template>

@@ -146,7 +146,10 @@ export default {
     }
     .div4__year { 
         transform: rotate(-90deg);
-        font-size: 7vw;
+        font-size: 11vw;
+        position: absolute;
+        top: 19%;
+        left: -5%;
     }
 
     .div5 { 

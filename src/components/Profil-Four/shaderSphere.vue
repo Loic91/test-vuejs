@@ -1,13 +1,14 @@
 <template>
+    <h1>HELLO THREE</h1>
 
     <Scene />
-    <Uniforms />
+    <Text />
 </template>
 
 <script>
 // On importe notre sous composant "Item.vue"
 import Scene from './Scene.vue'
-import Uniforms from './Uniforms.vue'
+import Text from './Text.vue'
 
 export default {
     name: 'shaderSphere',
@@ -15,7 +16,7 @@ export default {
     // "components" est un objet dans lequel on peut lui mettre plusieurs compoents
     components: {
         Scene,
-        Uniforms
+        Text
     },
 
     

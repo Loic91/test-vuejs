@@ -11,8 +11,10 @@
     "chroma-js": "^2.4.2",
     "core-js": "^3.8.3",
     "gsap": "file:gsap-bonus.tgz",
+    "simplex-noise": "^3.0.1",
     "three": "^0.141.0",
     "troisjs": "^0.3.4",
+    "v-tweakpane": "^0.0.2",
     "vue": "^3.2.13",
     "vue-router": "^4.0.3"
   },

@@ -9,12 +9,12 @@
 
         <Camera :position="{ z: 10 }" />
         <Scene>
-            <PointLight :position="{ y: 150, z: 150 }" />
+            <PointLight v-bind:position="{ y: 150, z: 150 }" />
             <!-- <Box ref="box" v-on:pointerOver="boxOver" v-on:click="boxClick" v-bind:rotation="{ y: Math.PI / 4, z: Math.PI / 4 }" v-bind:width="2" v-bind:height="2" v-bind:depth="10">
                 <LambertMaterial :color="boxColor" />
             </Box> -->
             <Sphere ref="sphere" v-on:pointerOver="boxOver" v-on:click="boxClick" v-bind:rotation="{ y: Math.PI / 14, z: Math.PI / 14 }" v-bind:radius="3" v-bind:widthSegments="64" v-bind:heightSegments="32">
-                <PhongMaterial :color="boxColorSphere" />
+                <PhongMaterial v-bind:color="boxColorSphere" />
             </Sphere>
         </Scene>
     </Renderer>

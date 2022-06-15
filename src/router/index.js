@@ -33,6 +33,36 @@ const routes = [
     name: 'profil4',
     component: () => import(/* webpackChunkName: "about" */ '../views/ProfilView4.vue')
   },
+  {
+    path: '/profil5',
+    name: 'profil5',
+    component: () => import(/* webpackChunkName: "about" */ '../views/ProfilView5.vue')
+  },
+  {
+    path: '/profil6',
+    name: 'profil6',
+    component: () => import(/* webpackChunkName: "about" */ '../views/ProfilView6.vue')
+  },
+  {
+    path: '/profil7',
+    name: 'profil7',
+    component: () => import(/* webpackChunkName: "about" */ '../views/ProfilView7.vue')
+  },
+  {
+    path: '/profil8',
+    name: 'profil8',
+    component: () => import(/* webpackChunkName: "about" */ '../views/ProfilView8.vue')
+  },
+  {
+    path: '/profil9',
+    name: 'profil9',
+    component: () => import(/* webpackChunkName: "about" */ '../views/ProfilView9.vue')
+  },
+  {
+    path: '/profil10',
+    name: 'profil10',
+    component: () => import(/* webpackChunkName: "about" */ '../views/ProfilView10.vue')
+  },
 ]
 
 const router = createRouter({
